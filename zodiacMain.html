@@ -1,0 +1,59 @@
+<html>
+<!--
+HEAD: Creates a title header and implements the css style sheet
+-->
+  <head>
+    <title> Which New York Knick are you?</title>
+    <link rel="stylesheet" href="zodiacCSS.css">
+  </head> 
+
+<!--
+BODY: 
+-Creates divs for left side icons, calendar, help button, and right side icons.
+-Left and right side icons are clickable icons.  These classes takepicture,
+information, and sound parameters and then display onclick of picture.
+-Calendar finds month and day parameters on input/click
+-->
+  <body>
+    <div class="banner">
+      <!--HELP OVERLAY (click button to enter, click on screen to exit)-->
+      <div id="overlay" onclick="off();">HOW TO USE THIS PROGRAM<br><br><br>A) Click on the calendar below "Enter date of birth". Once you enter your birth month, birth date, and birth year (optional), a corresponding Knicks player and their data will be displayed below.  Data can be re-entered.<br><br>B) Click a player picture on the side panels.  Their data will be displayed below.<br><br><br>To exit this window, click anywhere on the screen.  To come back to this window, press the "Click for help" button again.</div>
+      <!--LEFT SIDE IMAGES + DATA (picture, description, sound)-->
+      <div class="homepageImagesLeft">
+        <img class="homeCamReddish" src="./zodiacTeamPhotos/camReddishPhoto.jpeg" title="Cam Reddish" onclick="clickPicture(this.src,'YOU ARE CAM REDDISH<br>-Went to Duke with RJ Barrett<br>-Played with Hawks and Knicks<br>-Moved to Portland at trade deadline<br><br>11.8 PTS<br>3.1 RB<br>2.2 AST', './zodiacTeamSounds/camReddishSound.mp3');">
+        <img class="homeJuliusRandle" src="./zodiacTeamPhotos/juliusRandlePhoto.jpeg" title = "Julius Randle" onclick="clickPicture(this.src,'YOU ARE JULIUS RANDLE<br>-Went to Kentucky<br>-Played with Lakers and Pelicans<br>-2 time all-star and 1 time most improved player<br><br>25.2 PTS<br>10.3 RB<br>4.1 AST', './zodiacTeamSounds/juliusRandleSound.mp3');">
+        <img class="homeJalenBrunson" src="./zodiacTeamPhotos/jalenBrunsonPhoto.jpeg" title = "Jalen Brunson" onclick="clickPicture(this.src,'YOU ARE JALEN BRUNSON<br>-Went to Villanova with Josh Hart<br>-Played with Mavericks<br>-The best Knicks point guard in over a decade<br><br>23.8 PTS<br>3.6 RB<br>6.1 AST', './zodiacTeamSounds/jalenBrunsonSound.mp3');">
+        <img class="homeJerichoSims" src="./zodiacTeamPhotos/jerichoSimsPhoto.jpeg" title = "Jericho Sims" onclick="clickPicture(this.src,'YOU ARE JERICHO SIMS<br>-Went to Texas<br>-44.5 inch vertical<br>-Notoriously dissapointing dunk contest<br><br>3.5 PTS<br>4.7 RB<br>0.5 AST', './zodiacTeamSounds/jerichoSimsSound.mp3');">
+        <img class="homeJoshHart" src="./zodiacTeamPhotos/joshHartPhoto.jpeg" title = "Josh Hart" onclick="clickPicture(this.src,'YOU ARE JOSH HART<br>-Went to Villanova with Jalen Brunson<br>-Got traded for Cam Reddish<br>-Hustles and does the little things<br><br>9.9 PTS<br>7.9 RB<br>3.9 AST', './zodiacTeamSounds/joshHartSound.mp3');">
+        <img class="homeEvanFournier" src="./zodiacTeamPhotos/evanFournierPhoto.jpeg" title = "Evan Fournier" onclick="clickPicture(this.src, 'YOU ARE EVAN FOURNIER<br>-From France<br>-Played for Orlando and Boston<br>-Can shoot, sits on the bench<br><br>6.8 PTS<br>2.0 RB<br>1.5 AST', './zodiacTeamSounds/evanFournierSound.mp3');">
+      </div>
+      <!--
+      HEADER AND CALENDAR TEXT (calendar uses date and dateofbirth as inputs on click.  
+      ur and urtext corralate with click input for pictures)
+      -->
+      <div class="headerText">
+      </h1>Which New York Knick are you?</h1>
+      <p>Use the calendar below to find out!</p>
+      <button onclick="on();">Click for help</button>
+      <br>
+      <label for="dateofbirth">Enter Date Of Birth</label>
+      <input type="date" name="dateofbirth" id="dateofbirth"></input>
+      <div>
+        <image id="ur" class="ur"></image>
+        <div id="urText" class="urText"></div>
+      </div>
+    </div>
+  <!--RIGHT SIDE IMAGES + DATA (picture, description, sound)-->
+      <div class="homepageImagesRight">
+        <img class="homeRJBarrett" src="./zodiacTeamPhotos/rjBarrettPhoto.jpeg" title = "RJ Barrett" onclick="clickPicture(this.src,'YOU ARE RJ BARRETT<br>-Went to Duke with Cam Reddish<br>-Drafted #3 overall by the Knicks in 2019<br>-Has potential, but needs to be more consistent<br><br>19.9 PTS<br>5.1 RB<br>2.7 AST', './zodiacTeamSounds/rjBarrettSound.mp3')">
+        <img class="homeMitchellRobinson" src="./zodiacTeamPhotos/mitchellRobinsonPhoto.jpeg" title = "Mitchell Robinson" onclick="clickPicture(this.src,'YOU ARE MITCHELL ROBINSON<br>-Went to Western Kentucky University, but dropped out<br>-Second round pick by the Knicks<br>-Underrated rim protector and finisher<br><br>7.5 PTS<br>9.1 RB<br>0.9 AST', './zodiacTeamSounds/mitchellRobinsonSound.mp3');">
+        <img class="homeQuentinGrimes" src="./zodiacTeamPhotos/quentinGrimesPhoto.jpeg" title = "Quentin Grimes" onclick="clickPicture(this.src,'YOU ARE QUENTIN GRIMES<br>-Went to Houston University<br>-2022 All-Summer League First Team<br>-Solid shooter and perimeter defender<br><br>9.8 PTS<br>3.1 RB<br>1.9 AST','./zodiacTeamSounds/quentinGrimesSound.mp3');">
+        <img class="homeObiToppin" src="./zodiacTeamPhotos/obiToppinPhoto.jpeg" title = "Obi Toppin" onclick="clickPicture(this.src,'YOU ARE OBI TOPPIN<br>-Went to Dayton University<br>-Dynamic dunker and corner shooter<br>-Has potential but does not get minutes<br><br>6.2 PTS<br>2.8 RB<br>0.8 AST','./zodiacTeamSounds/obiToppinSound.mp3');">
+        <img class="homeImmanuelQuickley" src="./zodiacTeamPhotos/immanuelQuickleyPhoto.jpeg" title = "Immaneul Quickley" onclick="clickPicture(this.src,'YOU ARE IMMANUEL QUICKLEY<br>-Went to Kentucky<br>-Craft shot creator and perimeter defender<br>-One of the best role players in the NBA<br><br>13.6 PTS<br>4.1 RB<br>3.2 AST','./zodiacTeamSounds/immanuelQuickleySound.mp3');">
+        <img class="homeDerrickRose" src="./zodiacTeamPhotos/derrickRosePhoto.jpeg" title = "Derrick Rose"onclick="clickPicture(this.src,'YOU ARE DERRICK ROSE<br>-Went to Memphis<br>-2011 MVP, youngest in NBA history at 22 with the Bulls<br>-Injuries hurt his career, but now is a veteran presence on the bench<br><br>5.6 PTS<br>1.5 RB<br>1.7 AST','./zodiacTeamSounds/derrickRoseSound.mp3');">
+      </div>
+    </div>
+  </body>
+  <!--SCRIPT:  Implements zodiac javascript with calendar functions-->
+  <script src="zodiacJava.js"></script>
+</html>

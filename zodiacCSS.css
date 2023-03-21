@@ -1,0 +1,133 @@
+/*BANNER: sets background gradient*/
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgb(8, 48, 142), rgb(255, 115, 0));
+    background-size: cover;
+    background-position: center;
+}
+/*OVERLAY: sets opacity, color, text, and background for help button overlay*/ 
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.85); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    text-align: center;
+  }
+
+/*HEADER TEXT: sets font color, size, parameters for header*/
+.headerText{
+    width: 500px;
+    margin: 15px 250px;
+    text-align: center;
+    /*position:relative;*/
+    color:rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    /*padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;*/
+}
+/*HOMEPAGE LEFT: sets image size for standard .homeleft items (size, width, height, etc.)*/
+.homepageImagesLeft,.homeCamReddish,.homeJuliusRandle,.homeJalenBrunson,.homeJerichoSims,.homeJoshHart,.homeEvanFournier
+{
+    border: 1px solid rgb(255, 115, 0);
+    border-radius: 10px;
+    padding: 1px;
+    width: 170px;
+    height: 120px;
+    display:block;
+    float:left;
+    background-color: rgb(8, 48, 142);
+  }
+/*HOMEPAGE LEFT HOVER: sets image size for HOVERED .homeleft items (MAIN DIFFERENCE: background becomes orange and borders become blue)*/
+  .homepageImagesLeft:hover,.homeCamReddish:hover,.homeJuliusRandle:hover,.homeJalenBrunson:hover,.homeJerichoSims:hover,.homeJoshHart:hover,.homeEvanFournier:hover
+{
+    border: 1px solid rgb(8, 48, 142);
+    border-radius: 10px;
+    padding: 1px;
+    width: 170px;
+    height: 120px;
+    display:block;
+    float:left;
+    background-color: rgb(255, 115, 0);
+  }
+
+/*HOMEPAGE RIGHT: sets image size for standard .homeright (items (size, width, height, etc.)*/
+.homepageImagesRight,.homeRJBarrett,.homeMitchellRobinson,.homeQuentinGrimes,.homeObiToppin,.homeImmanuelQuickley,.homeDerrickRose
+{
+    border: 1px solid rgb(255, 115, 0);
+    border-radius: 10px;
+    padding: 1px;
+    width: 170px;
+    height: 120px;
+    display:block;
+    float:right;
+    background-color: rgb(8, 48, 142);
+}
+/*HOMEPAGE RIGHT HOVER: sets image size for HOVERED .homeright items (MAIN DIFFERENCE: background becomes orange and borders become blue)*/
+.homepageImagesRight:hover,.homeRJBarrett:hover,.homeMitchellRobinson:hover,.homeQuentinGrimes:hover,.homeObiToppin:hover,.homeImmanuelQuickley:hover,.homeDerrickRose:hover
+{
+    border: 1px solid rgb(8, 48, 142);
+    border-radius: 10px;
+    padding: 1px;
+    width: 170px;
+    height: 120px;
+    display:block;
+    float:right;
+    background-color: rgb(255, 115, 0);
+}
+/*CALENDAR PARAMETERS: Sets parameters for calendar font, background from web, and border*/
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  /* custom styles */
+  body {
+    padding: 1em;
+    background: #e5e5e5;
+    font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  }
+  label {
+    display: block;
+  }
+  input {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+  }
+/*UR AND URTEXT:sets parameters for ur (image size in middle) and urtext (text box in middle size, font)*/
+.ur{
+    width: 230px;
+    height: 180px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+.urText{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
