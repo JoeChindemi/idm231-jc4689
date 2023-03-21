@@ -1,7 +1,7 @@
 # idm231-jc4689
 --IDM 231 FINAL ZODIAC PROJECT--
 
-This IDM 231 final project is a javascript/html/css application based upon the western zodiac system.
+This IDM 231 final project is a javascript/html/css application based upon the western zodiac system and the New York Knicks.
 
 Users will be presented a homescreen with a title, calendar button, help section, and icons to the left and right side of the screen.
 
